@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Futura;
+  src: local("Futura.ttc");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #d9d6cf;
+  font-family: "Futura";
+}
+
+hr {
+  color: black;
+  height: 2px;
+  background-color: black;
+}
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  padding-left: 5%;
+  padding-top: 2rem;
+}
+.navbar {
+  margin-right: 5%;
+}
+.navbar a {
+  margin: 0 2rem;
+}
+
+/* main */
+
+.section1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: white;
+  width: 90%;
+}
+.introduction-text {
+  width: 90%;
+  margin-top: 1rem;
+  font-family: plantin;
+  font-weight: 400;
+  size: 24px;
+  line-height: 30px;
+}
+.box {
+  height: 90%;
+  width: 90%;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+.box p,
+.box h3 i {
+  color: white;
+  padding: 1rem 0 0 1rem;
+}
+
+.box-title {
+  font-size: 0.7rem;
+}
+.box-subtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  background-color: red;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+/* 
+@media screen and (min-width: 320px) {
+}
+.section1 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.box {
+  height: 90%;
+  width: 90%;
+  background-color: black;
+  margin: 0 0 0 0;
+  position: relative;
+  top: 0%;
+  right: 0%;
+  margin-top: 1rem;
+}
+.circle {
+  background-color: red;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  right: 78%;
+}
+
+.introduction-text {
+  width: 90%;
+  margin: 1rem 0 0 0;
+  font-family: plantin;
+  font-weight: 400;
+  size: 24px;
+  line-height: 30px;
+}
+
+.box p,
+.box h3 i {
+  color: white;
+  padding: 1rem 0 0 1rem;
+}
+
+.box-title {
+  font-size: 0.7rem;
+}
+.box-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.box .description {
+  width: 50%;
+}
+
+@media screen and (min-width: 480px) {
+} // mobile landscape
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  /* use this as a breakpoint for where to split the page with the box at the side 
+}
+
+@media screen and (min-width: 1200px) {
+}
+*/
