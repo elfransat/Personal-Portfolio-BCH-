@@ -45,6 +45,7 @@ header {
   align-items: center;
   background-color: white;
   width: 90%;
+  border: solid 1px #d9d6cf;
 }
 .introduction-text {
   width: 90%;
@@ -59,6 +60,7 @@ header {
   width: 90%;
   background-color: black;
   margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box p,
@@ -75,12 +77,38 @@ header {
   margin-bottom: 1rem;
 }
 
+.description {
+  width: 50%;
+  margin-top: 4rem;
+}
+
 .circle {
   background-color: red;
   width: 10vh;
   height: 10vh;
   border-radius: 50%;
   margin-left: 1rem;
+}
+
+.section2 {
+  height: 200px;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: none;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  z-index: 10;
+  bottom: none;
+  outline: none;
+  background-color: #d9d6cf;
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 10px;
 }
 /* 
 @media screen and (min-width: 320px) {
@@ -138,13 +166,32 @@ header {
 .box .description {
   width: 50%;
 }
-
+*/ 
 @media screen and (min-width: 480px) {
 } // mobile landscape
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
-  /* use this as a breakpoint for where to split the page with the box at the side 
+  
+  .section1 {
+    flex-direction: row;
+    padding-bottom: 100px;
+  }
+
+  .introduction-text {
+    width: 40%;
+    margin: 2rem 0 1rem 2rem;
+  }
+
+  .box {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    right: 7rem;
+    top: 7rem;
+  }
+
+  
 }
 
 @media screen and (min-width: 1200px) {
