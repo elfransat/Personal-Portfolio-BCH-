@@ -1,3 +1,5 @@
+$backgroundcolor: black;
+
 @font-face {
   font-family: Futura;
   src: local("Futura.ttc");
@@ -11,65 +13,50 @@
 }
 
 body {
-  background-color: black;
+  background-color: $backgroundcolor;
   font-family: "Futura";
 }
 
 /* Navbar */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-bottom: 4rem;
   padding-left: 5%;
   padding-top: 2rem;
   color: white;
 }
-
 .navbar {
   margin-right: 5%;
-}
-
-.navbar a {
-  margin: 0 2rem;
-  color: white;
+  a {
+    margin: 0 2rem;
+    color: white;
+  }
 }
 
 /* main */
+
 .section1 {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
   color: white;
   padding-top: 4rem;
-}
 
-.section1 .introduction-text {
-  padding: 4rem auto;
-}
-
-.section1 .introduction-text h1 {
-  width: 100%;
-  margin: 1rem auto;
-  font-family: Futura;
-  font-weight: 400;
-  color: white;
-  text-align: center;
+  .introduction-text {
+    padding: 4rem auto;
+    h1 {
+      width: 100%;
+      margin: 1rem auto;
+      font-family: Futura;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+    }
+  }
 }
 
 .section2 {
@@ -77,26 +64,17 @@ header {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
+  flex-direction: row;
+  justify-content: flex-start;
 
-.section2 .photo {
-  margin: 2rem 2rem 2rem 2rem;
+  .photo {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .description {
+    font-family: plantin;
+  }
 }
-
-.section2 .description {
-  font-family: plantin;
-}
-
 /* scroll to top button */
 #myButton {
   display: none;
@@ -106,13 +84,12 @@ header {
   z-index: 10;
   bottom: none;
   outline: none;
-  background-color: black;
+  background-color: $backgroundcolor;
   padding: 1rem;
   font-size: 18px;
   border-radius: 10px;
   opacity: 70%;
 }
-
 /* icon for arrow up button */
 .lnr-arrow-up {
   font-size: 32px;
@@ -175,7 +152,10 @@ header {
   width: 50%;
 }
 */
-/* 
+@media screen and (min-width: 480px) {
+} // mobile landscape
+@media screen and (min-width: 768px) {
+} /* 
 @media screen and (min-width: 1024px) {
   .section1 {
     flex-direction: row;
@@ -196,4 +176,6 @@ header {
   }
 }
 */
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 1200px) {
+}
