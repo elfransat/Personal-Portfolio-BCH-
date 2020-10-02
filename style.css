@@ -95,9 +95,10 @@ header {
   background-color: white;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 1000px;
 }
-
-.btn {
+/* scroll to top button */ 
+#myButton {
   display: none;
   position: fixed;
   bottom: 4rem;
@@ -109,7 +110,13 @@ header {
   padding: 1rem;
   font-size: 18px;
   border-radius: 10px;
+  opacity: 70%;
 }
+/* icon for arrow up button */ 
+.lnr-arrow-up {
+  font-size: 32px;
+}
+
 /* 
 @media screen and (min-width: 320px) {
 }
