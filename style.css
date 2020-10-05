@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 body {
@@ -29,13 +29,27 @@ header {
   color: white;
 }
 
-.navbar {
-  margin-right: 5%;
+header #links a {
+  display: none;
 }
 
 .navbar a {
   margin: 0 2rem;
   color: white;
+}
+
+#myLinks {
+  display: none;
+  padding-right: 2rem;
+}
+
+#myLinks a {
+  padding: 2rem 0;
+}
+
+.lnr-menu {
+  font-size: 1.5rem;
+  padding-right: 4rem;
 }
 
 /* main */
