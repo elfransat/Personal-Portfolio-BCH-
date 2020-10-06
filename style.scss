@@ -9,7 +9,7 @@ $backgroundcolor: black;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 body {
@@ -18,22 +18,94 @@ body {
 }
 
 /* Navbar */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 4rem;
-  padding-left: 5%;
-  padding-top: 2rem;
-  color: white;
-}
-.navbar {
-  margin-right: 5%;
-  a {
-    margin: 0 2rem;
-    color: white;
-  }
-}
 
+/* Navbar */
+/* Navbar */
+header {
+
+  .hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    padding-left: 5%;
+    padding-top: 2rem;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    #links a {
+      display: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .navbar {
+    a {
+      margin: 0 2rem;
+      color: white;
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  
+    .change .line1 {
+      transform: rotateZ(-45) translate(-8px, 6px);
+    }
+    .change .line2 {
+      opacity: 0;
+    }
+    .change .line3 {
+      transform: rotateZ(45) translate(-8px, -6px);
+    }
+  }
+  
+  #myLinks {
+    display: none;
+    padding-right: 2rem;
+    a {
+      padding: 2rem 0;
+  .navbar {
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -40%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    align-items: flex-start;
+    transition: right 0.4s;
+  }
+  .my-links {
+    margin: 4rem 0;
+    .nav-item {
+      list-style: none;
+      margin: 2rem 0;
+    }
+  }
+  .nav-list {
+    text-align: right;
+  }
+  
+  .change {
+    right: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 34px;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+    list-style: none;
+    margin-left: 4rem;
 /* main */
 
 .section1 {
@@ -84,15 +156,14 @@ header {
   z-index: 10;
   bottom: none;
   outline: none;
-  background-color: $backgroundcolor;
   padding: 1rem;
-  font-size: 18px;
-  border-radius: 10px;
+  background-color: black;
   opacity: 70%;
+  border: none;
 }
 /* icon for arrow up button */
 .lnr-arrow-up {
-  font-size: 32px;
+  font-size: 4rem;
 }
 
 /* 

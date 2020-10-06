@@ -16,3 +16,10 @@ const topFunction = () => {
   document.body.scrolltop = 0; // for Safari
   document.documentElement.scrollTop = 0; //Other browsers
 };
+
+var menuIcon = document.querySelector(".hamburger-menu");
+var navbar = document.querySelector(".navbar");
+
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("change");
+});

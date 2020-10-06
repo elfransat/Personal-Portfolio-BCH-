@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   font-family: "Futura";
 }
 
+/* Navbar */
 /* Navbar */
 header {
   display: -webkit-box;
@@ -106,16 +107,15 @@ header {
   z-index: 10;
   bottom: none;
   outline: none;
-  background-color: black;
   padding: 1rem;
-  font-size: 18px;
-  border-radius: 10px;
+  background-color: black;
   opacity: 70%;
+  border: none;
 }
 
 /* icon for arrow up button */
 .lnr-arrow-up {
-  font-size: 32px;
+  font-size: 4rem;
 }
 
 /* 
