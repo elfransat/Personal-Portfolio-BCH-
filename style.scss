@@ -18,96 +18,40 @@ body {
 }
 
 /* Navbar */
+// aligns items for desktop view //
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3rem 0rem;
+  // padding to position navbar correctly /
+  padding-left: 20rem;
 
-/* Navbar */
-/* Navbar */
+  // creates margin between individual items //
+  a {
+    margin: 0 2rem;
+  }
+}
 header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 0 0 2rem;
+}
+/* hides hamburger menu since isn't needed on desktop */
+.nav-list {
+  display: none;
+}
 
-  .hamburger-menu {
-    width: 35px;
-    height: 30px;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 4rem;
-    padding-left: 5%;
-    padding-top: 2rem;
-    color: white;
-    flex-direction: column;
-    justify-content: space-around;
-  
-    #links a {
-      display: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  .navbar {
-    a {
-      margin: 0 2rem;
-      color: white;
-  
-  .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-  
-    .change .line1 {
-      transform: rotateZ(-45) translate(-8px, 6px);
-    }
-    .change .line2 {
-      opacity: 0;
-    }
-    .change .line3 {
-      transform: rotateZ(45) translate(-8px, -6px);
-    }
-  }
-  
-  #myLinks {
-    display: none;
-    padding-right: 2rem;
-    a {
-      padding: 2rem 0;
-  .navbar {
-    width: 40%;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    right: -40%;
-    display: flex;
-    justify-content: flex-start;
-    color: black;
-    align-items: flex-start;
-    transition: right 0.4s;
-  }
-  .my-links {
-    margin: 4rem 0;
-    .nav-item {
-      list-style: none;
-      margin: 2rem 0;
-    }
-  }
-  .nav-list {
-    text-align: right;
-  }
-  
-  .change {
-    right: 0;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    font-size: 34px;
-    color: gray;
-    font-weight: 400;
-    letter-spacing: 1px;
-    list-style: none;
-    margin-left: 4rem;
 /* main */
 
+.container {
+  // to prevent the navbar covering content
+  padding: 8rem 0;
+}
 .section1 {
   margin: 0 auto;
   display: flex;
@@ -147,6 +91,22 @@ header {
     font-family: plantin;
   }
 }
+
+// showcase section which contains images and links to my work ect //
+
+.showcase {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20%;
+}
+
+.projects {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  p {
+  }
+}
 /* scroll to top button */
 #myButton {
   display: none;
@@ -161,92 +121,216 @@ header {
   opacity: 70%;
   border: none;
 }
+
+// icon styling //
+
 /* icon for arrow up button */
 .lnr-arrow-up {
   font-size: 4rem;
 }
 
-/* 
-@media screen and (min-width: 320px) {
-}
-.section1 {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column-reverse;
-  align-items: center;
+// icon below intro text //
+
+.lnr-chevron-down {
+  font-size: 3rem;
+  opacity: 70%;
+  margin-top: 2rem;
 }
 
-.box {
-  height: 90%;
-  width: 90%;
-  background-color: black;
-  margin: 0 0 0 0;
-  position: relative;
-  top: 0%;
-  right: 0%;
-  margin-top: 1rem;
-}
-.circle {
-  background-color: red;
-  width: 10vh;
-  height: 10vh;
-  border-radius: 50%;
-  position: absolute;
-  top: 40%;
-  right: 78%;
-}
-
-.introduction-text {
-  width: 90%;
-  margin: 1rem 0 0 0;
-  font-family: plantin;
-  font-weight: 400;
-  size: 24px;
-  line-height: 30px;
-}
-
-.box p,
-.box h3 i {
-  color: white;
-  padding: 1rem 0 0 1rem;
-}
-
-.box-title {
-  font-size: 0.7rem;
-}
-.box-subtitle {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-
-.box .description {
-  width: 50%;
-}
-*/
-@media screen and (min-width: 480px) {
-} // mobile landscape
-@media screen and (min-width: 768px) {
-} /* 
-@media screen and (min-width: 1024px) {
-  .section1 {
-    flex-direction: row;
-    padding-bottom: 100px;
+@media screen and (max-width: 480px) {
+  .logo img {
+    // resizing and aligning of logo for mobile phones
+    height: 70%;
+    padding-left: 2rem;
   }
 
-  .introduction-text {
+  // resizing of intro text //
+  .introduction-text h1 {
+    font-size: 1.3rem;
+  }
+
+  header {
+    margin: 0;
+    .hamburger-menu {
+      width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 0rem;
+      right: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+      padding-left: 5%;
+      padding-top: 2rem;
+      color: white;
+      flex-direction: column;
+      z-index: 1;
+
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+      }
+      .change .line1 {
+        transform: rotateZ(-45) translate(-8px, 6px);
+      }
+      .change .line2 {
+        opacity: 0;
+      }
+      .change .line3 {
+        transform: rotateZ(45) translate(-8px, -6px);
+      }
+
+      #links a {
+        display: fixed;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    transition: right 0.4s;
+    margin-top: 0;
+    // removes padding as it displays differently with hamburger menu //
+    padding-left: 0;
+
+    a {
+      font-size: 22px;
+      margin: 0;
+      margin: 2rem 0;
+    }
+  }
+
+  .nav-list {
+    text-align: right;
+    align-items: center;
+  }
+
+  .change {
+    right: 0;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 44px;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+    list-style: none;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 481px) {
+  // navbar for mobile devices
+  header {
+    .hamburger-menu {
+      width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 1rem;
+      right: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+      padding-left: 5%;
+      padding-top: 2rem;
+      color: white;
+      flex-direction: column;
+      z-index: 1;
+
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+      }
+      .change .line1 {
+        transform: rotateZ(-45) translate(-8px, 6px);
+      }
+      .change .line2 {
+        opacity: 0;
+      }
+      .change .line3 {
+        transform: rotateZ(45) translate(-8px, -6px);
+      }
+
+      #links a {
+        display: fixed;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .navbar {
     width: 40%;
-    margin: 2rem 0 1rem 2rem;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    transition: right 0.4s;
+    margin-top: 0;
+
+    a {
+      font-size: 34px;
+      margin: 0;
+      margin: 2rem 0;
+    }
   }
 
-  .box {
-    position: absolute;
-    width: 40%;
-    height: 50%;
-    right: 7rem;
-    top: 7rem;
+  .nav-list {
+    text-align: right;
+    align-items: center;
   }
+
+  .change {
+    right: 0;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 44px;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+    list-style: none;
+    margin-left: 4rem;
+  }
+
+  // end of navbar
 }
-*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1200px) {
 }
