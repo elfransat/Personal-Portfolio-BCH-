@@ -48,7 +48,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 2rem;
+  padding-left: 5rem;
 }
 
 /* hides hamburger menu since isn't needed on desktop */
