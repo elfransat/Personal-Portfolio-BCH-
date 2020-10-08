@@ -9,21 +9,28 @@
       rel="stylesheet"
       href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/ef01ae4c16.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Louis Atkinson</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="darklogo.svg"
-          alt="Logo containing my Name 'Louis Atkinson'"
-        />
-      </div>
+      <a href="#">
+        <div class="logo">
+          <img
+            src="darklogo.svg"
+            alt="Logo containing my Name 'Louis Atkinson'"
+          />
+        </div>
+      </a>
       <nav class="navbar">
         <a href="#">Projects</a>
-        <a href="">Experience</a>
-        <a href="#">Contact</a>
-        <a href="/aboutme/aboutme.html">About Me</a>
+        <a href="">Mood board</a>
+        <a href="#">About Me</a>
+        <a href="/aboutme/aboutme.html">Contact</a>
       </nav>
       <div class="hamburger-menu">
         <div class="line line1"></div>
@@ -40,32 +47,111 @@
       <div class="container">
         <div class="section1">
           <div class="introduction-text">
-            <h1>
-              I am a Full Stack Developer currently located in Helsinki,
-              Finland.
-            </h1>
+            <h1>I am a Full Stack Developer located in Helsinki, Finland</h1>
             <h1>
               I enjoy creating responsive websites which feature good UI and UX
               design
             </h1>
-            <h1><span class="lnr lnr-chevron-down"></span></h1>
+            <p>
+              <span class="lnr lnr-chevron-down"></span>
+            </p>
           </div>
         </div>
       </div>
       <div class="section2">
-        <div class="photo">
-          <img src="/Assets/me.jpg" alt="Photo of me" />
-        </div>
         <div class="showcase">
-          <div class="projects"><p>hello</p></div>
-          <div class="experience"></div>
-          <div class="contact-me"><div class="about-me"></div></div>
+          <div class="grid-item grid-image mobile-order1">
+            <img
+              src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="grid-item grid-description mobile-order2">
+            <h2>
+              I am currently working on a number of projects both at Business
+              College Helsinki and during my spare time
+            </h2>
+            <a href="#"> View My Projects</a>
+          </div>
+          <div class="grid-item grid-description mobile-order3">
+            <h2>
+              This is a mood board I use to showcase others work and inpspire my
+              design choices
+            </h2>
+            <a href="#"> View My mood board</a>
+          </div>
+          <div class="grid-item grid-image mobile-order4">
+            <img
+              src="https://images.unsplash.com/photo-1559163479-98365644374a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt=""
+            />
+          </div>
+          <div class="grid-item grid-image mobile-order5">
+            <img src="/assets/me.jpg" alt="" />
+          </div>
+          <div class="grid-item grid-description mobile-order6">
+            <h2>Want to know more about me and my working experience?</h2>
+            <a href="#"> About Me</a>
+          </div>
+          <div class="grid-item grid-description mobile-order7">
+            <h2>Want to work with me?</h2>
+            <a href="#"> Contact Me</a>
+          </div>
+          <div class="grid-item grid-image mobile-order8">
+            <img
+              src="https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1655&q=80"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <button onclick="topFunction()" id="myButton" title="Go to top">
         <span class="lnr lnr-arrow-up"></span>
       </button>
     </main>
+    <footer class="footer">
+      <a href="#">
+        <div class="footer-logo">
+          <img
+            src="darklogo.svg"
+            alt="Logo containing my Name 'Louis Atkinson'"
+          />
+        </div>
+      </a>
+      <div class="contact-info">
+        <p>Helsinki, Finland</p>
+        <p>atkinsonlouis@gmail.com</p>
+      </div>
+      <div class="icons">
+        <a
+          href="https://github.com/elfransat"
+          target="_blank"
+          class="social-links"
+        >
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/louis-atkinson-202aa6191/"
+          class="social-links"
+          target="_blank"
+        >
+          <i class="social-link fab fa-linkedin fa-2x"></i>
+        </a>
+        <a
+          href="https://www.codewars.com/users/elfransat"
+          class="social-links"
+          target="_blank"
+        >
+          <span
+            class="iconify"
+            data-icon="simple-icons:codewars"
+            data-inline="false"
+            data-height="30px"
+          ></span>
+        </a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

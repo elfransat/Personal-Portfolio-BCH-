@@ -32,6 +32,7 @@ body {
     margin: 0 2rem;
   }
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -39,7 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 0 0 0 2rem;
+  padding-left: 2rem;
 }
 /* hides hamburger menu since isn't needed on desktop */
 .nav-list {
@@ -50,7 +51,7 @@ header {
 
 .container {
   // to prevent the navbar covering content
-  padding: 8rem 0;
+  padding: 15rem 0;
 }
 .section1 {
   margin: 0 auto;
@@ -72,47 +73,94 @@ header {
       color: white;
       text-align: center;
     }
+    p {
+      margin: 4rem auto;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
-.section2 {
-  height: 200px;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 1000px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-  .photo {
-    margin: 2rem 2rem 2rem 2rem;
-  }
-  .description {
-    font-family: plantin;
-  }
+.photo {
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 // showcase section which contains images and links to my work ect //
 
 .showcase {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, 400px);
 }
 
-.projects {
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  p {
+// styling of projects section //
+.grid-image {
+  display: flex;
+  justify-content: center;
+  img {
+    height: 100%;
+    justify-content: center;
   }
 }
+
+.grid-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  flex-direction: column;
+  text-align: center;
+  h2 {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+  a {
+    margin-top: 2rem;
+  }
+}
+
+// footer //
+
+.footer {
+  display: flex;
+  margin: 2rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  border-top: 1px solid white;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  // separates icons correctly
+  .icons {
+    margin: 2rem 2rem 2rem 2rem;
+    .social-links {
+      padding: 0 10px;
+    }
+  }
+  .footer-logo {
+    padding: 0 0 2rem 2rem;
+  }
+  .contact-info {
+    padding: 2rem 0 2rem 2rem;
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.social-links {
+  padding: 10px 10px;
+}
+
 /* scroll to top button */
 #myButton {
   display: none;
   position: fixed;
-  bottom: 4rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 10;
   bottom: none;
   outline: none;
@@ -134,23 +182,29 @@ header {
 .lnr-chevron-down {
   font-size: 3rem;
   opacity: 70%;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 @media screen and (max-width: 480px) {
   .logo img {
     // resizing and aligning of logo for mobile phones
     height: 70%;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   // resizing of intro text //
   .introduction-text h1 {
     font-size: 1.3rem;
   }
-
+  // ensures even padding between boxes when using mobile view
+  .grid-description {
+    height: 400px;
+  }
   header {
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: fixed;
     .hamburger-menu {
       width: 35px;
       height: 30px;
@@ -188,6 +242,47 @@ header {
         }
       }
     }
+  }
+  // showcase grid for mobile device
+  .showcase {
+    display: grid;
+    grid-template-rows: repeat(5, 500px);
+    grid-template-columns: repeat(1, 100%);
+  }
+  .grid-image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      object-fit: cover;
+    }
+  }
+  //ordering showcase for mobile devices
+  .mobile-order1 {
+    order: 0;
+  }
+  .mobile-order2 {
+    order: 1;
+  }
+  .mobile-order3 {
+    order: 3;
+  }
+  .mobile-order4 {
+    order: 2;
+  }
+  .mobile-order5 {
+    order: 4;
+  }
+  .mobile-order6 {
+    order: 5;
+  }
+  .mobile-order7 {
+    order: 7;
+  }
+  .mobile-order8 {
+    order: 6;
   }
 
   .navbar {
