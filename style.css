@@ -368,6 +368,31 @@ header {
   grid-area: l;
 }
 
+.photo-aboutme {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo-aboutme img {
+  width: 30%;
+}
+
+.about-me-text {
+  width: 75%;
+  margin: 4rem auto;
+}
+
+.about-me-text h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
 @media screen and (max-width: 480px) {
   .logo img {
     height: 70%;
@@ -448,11 +473,10 @@ header {
     z-index: 1;
   }
   header .hamburger-menu {
-    width: 35px;
-    height: 30px;
+    width: 60px;
     position: fixed;
-    top: 0rem;
-    right: 50px;
+    top: 0.7rem;
+    right: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -471,9 +495,13 @@ header {
   }
   header .hamburger-menu .line {
     width: 100%;
-    height: 3px;
+    height: 5px;
     background-color: white;
+<<<<<<< HEAD
     z-index: 3;
+=======
+    margin: 4px 0;
+>>>>>>> aboutme
   }
   header .hamburger-menu .change .line1 {
     -webkit-transform: rotateZ(-45) translate(-8px, 6px);
@@ -570,8 +598,12 @@ header {
 
 @media screen and (max-width: 1023px) and (min-width: 481px) {
   header .hamburger-menu {
+<<<<<<< HEAD
     width: 100px;
     height: 30px;
+=======
+    width: 35px;
+>>>>>>> aboutme
     position: fixed;
     top: 1rem;
     right: 50px;
@@ -595,6 +627,7 @@ header {
     width: 100%;
     height: 3px;
     background-color: white;
+    margin: 2rem 0;
   }
   header .hamburger-menu .change .line1 {
     -webkit-transform: rotateZ(-45) translate(-8px, 6px);

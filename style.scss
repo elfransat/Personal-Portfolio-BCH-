@@ -273,6 +273,31 @@ header {
 
 // end of moodboard page //
 
+// start of about me page //
+
+.photo-aboutme {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 30%;
+  }
+}
+
+.about-me-text {
+  width: 75%;
+  margin: 4rem auto;
+
+  h1 {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+
+// end of about me page //
+
 @media screen and (max-width: 480px) {
   .logo img {
     // resizing and aligning of logo for mobile phones
@@ -345,11 +370,10 @@ header {
     padding-left: 1rem;
     z-index: 1;
     .hamburger-menu {
-      width: 35px;
-      height: 30px;
+      width: 60px;
       position: fixed;
-      top: 0rem;
-      right: 50px;
+      top: 0.7rem;
+      right: 2rem;
       display: flex;
       justify-content: space-between;
       padding-bottom: 4rem;
@@ -361,9 +385,9 @@ header {
 
       .line {
         width: 100%;
-        height: 3px;
+        height: 5px;
         background-color: white;
-        z-index: 3;
+        margin: 4px 0;
       }
       .change .line1 {
         transform: rotateZ(-45) translate(-8px, 6px);
@@ -435,8 +459,7 @@ header {
   // navbar for mobile devices
   header {
     .hamburger-menu {
-      width: 100px;
-      height: 30px;
+      width: 35px;
       position: fixed;
       top: 1rem;
       right: 50px;
@@ -453,6 +476,7 @@ header {
         width: 100%;
         height: 3px;
         background-color: white;
+        margin: 2rem 0;
       }
       .change .line1 {
         transform: rotateZ(-45) translate(-8px, 6px);
