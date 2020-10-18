@@ -273,6 +273,31 @@ header {
 
 // end of moodboard page //
 
+// start of about me page //
+
+.photo-aboutme {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 30%;
+  }
+}
+
+.about-me-text {
+  width: 75%;
+  margin: 4rem auto;
+
+  h1 {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+
+// end of about me page //
+
 @media screen and (max-width: 480px) {
   .logo img {
     // resizing and aligning of logo for mobile phones

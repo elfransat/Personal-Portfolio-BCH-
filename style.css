@@ -368,6 +368,31 @@ header {
   grid-area: l;
 }
 
+.photo-aboutme {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo-aboutme img {
+  width: 30%;
+}
+
+.about-me-text {
+  width: 75%;
+  margin: 4rem auto;
+}
+
+.about-me-text h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
 @media screen and (max-width: 480px) {
   .logo img {
     height: 70%;
