@@ -27,7 +27,7 @@ body {
   margin: 3rem 0rem;
 
   // padding to position navbar correctly /
-  padding-left: 20rem;
+  padding-left: 30rem;
 
   // creates margin between individual items //
   a {
@@ -125,6 +125,64 @@ header {
   }
   a {
     margin-top: 2rem;
+  }
+}
+
+// projects section //
+
+.projects-text {
+  padding-top: 10rem;
+  margin-top: 10rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  .project {
+    width: 1000px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 2rem;
+    padding-right: 1rem;
+
+    .project-example {
+      display: flex;
+      flex-direction: row;
+
+      .project-description {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          button {
+            padding: 0.5rem;
+            color: black;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .project-image {
+        margin-right: 2rem;
+
+        img {
+          width: 450px;
+        }
+      }
+    }
+
+    .project-title {
+      padding: 2rem;
+      text-align: center;
+      h1 {
+        padding-bottom: 1rem;
+      }
+    }
   }
 }
 
@@ -294,6 +352,18 @@ header {
     text-align: center;
     margin: 2rem;
   }
+  .download-container {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+#about-me-description {
+  margin: 2rem;
+}
+
+#download-cv {
+  text-align: center;
+  margin: 0 1rem;
 }
 
 // end of about me page //
@@ -546,7 +616,16 @@ header {
   // end of navbar
 }
 
-@media screen and (max-width: 1024px) {
-}
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
+  .showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 600px);
+    margin-bottom: 8rem;
+  }
+  .projects {
+    .project {
+      width: 1200px;
+    }
+  }
 }

@@ -29,7 +29,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 3rem 0rem;
-  padding-left: 20rem;
+  padding-left: 30rem;
 }
 
 .navbar a {
@@ -162,6 +162,85 @@ header {
 
 .grid-description a {
   margin-top: 2rem;
+}
+
+.projects-text {
+  padding-top: 10rem;
+  margin-top: 10rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project {
+  width: 1000px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 2rem;
+  padding-right: 1rem;
+}
+
+.projects .project .project-example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects .project .project-example .project-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.projects .project .project-example .project-description .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects .project .project-example .project-description .buttons button {
+  padding: 0.5rem;
+  color: black;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.projects .project .project-example .project-image {
+  margin-right: 2rem;
+}
+
+.projects .project .project-example .project-image img {
+  width: 450px;
+}
+
+.projects .project .project-title {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects .project .project-title h1 {
+  padding-bottom: 1rem;
 }
 
 .footer {
@@ -393,6 +472,20 @@ header {
   margin: 2rem;
 }
 
+.about-me-text .download-container {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#about-me-description {
+  margin: 2rem;
+}
+
+#download-cv {
+  text-align: center;
+  margin: 0 1rem;
+}
+
 @media screen and (max-width: 480px) {
   .logo img {
     height: 70%;
@@ -497,11 +590,7 @@ header {
     width: 100%;
     height: 5px;
     background-color: white;
-<<<<<<< HEAD
-    z-index: 3;
-=======
     margin: 4px 0;
->>>>>>> aboutme
   }
   header .hamburger-menu .change .line1 {
     -webkit-transform: rotateZ(-45) translate(-8px, 6px);
@@ -598,12 +687,7 @@ header {
 
 @media screen and (max-width: 1023px) and (min-width: 481px) {
   header .hamburger-menu {
-<<<<<<< HEAD
-    width: 100px;
-    height: 30px;
-=======
     width: 35px;
->>>>>>> aboutme
     position: fixed;
     top: 1rem;
     right: 50px;
@@ -697,6 +781,21 @@ header {
     letter-spacing: 1px;
     list-style: none;
     margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .showcase {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (600px)[4];
+        grid-template-rows: repeat(4, 600px);
+    margin-bottom: 8rem;
+  }
+  .projects .project {
+    width: 1200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
