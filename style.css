@@ -3,6 +3,11 @@
   src: local("Futura.ttc");
 }
 
+@font-face {
+  font-family: FuturaStd-Light;
+  src: local("FuturaStf-Light.otf") format("opentype");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -158,6 +163,9 @@ header {
 .grid-description h2 {
   width: 60%;
   font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
 .grid-description a {
@@ -204,6 +212,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-family: inter;
 }
 
 .projects .project .project-example .project-description .buttons {
@@ -313,6 +324,10 @@ header {
   font-size: 3rem;
   opacity: 70%;
   padding-top: 2rem;
+}
+
+#moodboard-title {
+  line-height: 50px;
 }
 
 .moodboard {
@@ -479,6 +494,9 @@ header {
 
 #about-me-description {
   margin: 2rem;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  size: 17px;
 }
 
 #download-cv {

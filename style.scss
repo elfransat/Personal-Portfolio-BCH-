@@ -4,6 +4,10 @@ $backgroundcolor: black;
   font-family: Futura;
   src: local("Futura.ttc");
 }
+@font-face {
+  font-family: FuturaStd-Light;
+  src: local("FuturaStf-Light.otf") format("opentype");
+}
 
 * {
   padding: 0;
@@ -78,6 +82,8 @@ header {
       margin: 1rem auto;
       font-family: Futura;
       font-weight: 400;
+      //line-height: 50px;
+      //letter-spacing: 1px;
       color: white;
       text-align: center;
     }
@@ -122,6 +128,9 @@ header {
   h2 {
     width: 60%;
     font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
   }
   a {
     margin-top: 2rem;
@@ -154,6 +163,9 @@ header {
         display: flex;
         flex-direction: column;
         text-align: right;
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-family: inter;
         .buttons {
           display: flex;
           flex-direction: row;
@@ -253,6 +265,12 @@ header {
 }
 
 // moodboard page //
+
+//moodboard title
+
+#moodboard-title {
+  line-height: 50px;
+}
 
 .moodboard {
   display: grid;
@@ -359,6 +377,9 @@ header {
 }
 #about-me-description {
   margin: 2rem;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  size: 17px;
 }
 
 #download-cv {
